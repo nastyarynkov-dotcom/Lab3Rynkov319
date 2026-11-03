@@ -93,7 +93,7 @@ void task_figure8() {
     cin >> a;
 
     if (cin.fail() || a <= 0) {
-        cerr << "Некоректні дані!" << endl;
+        cerr << "Wrong input!" << endl;
         return;
     }
 
@@ -101,7 +101,7 @@ void task_figure8() {
     cin >> x >> y;
 
     if (!cin) {
-        cout << "Не числові дані!" << endl;
+        cout << "Wrong input!" << endl;
         return;
     }
 
@@ -125,8 +125,8 @@ void task_figure8() {
 
     // Перевірка загальної належності жовтій області
     if (inUpperTriangle || inLowerYellow) {
-        cout << "Точка належить жовтій області (Figure 8)." << endl;
+        cout << "Точка належить жовтій області." << endl;
     } else {
-        cout << "Точка НЕ належить жовтій області (Figure 8)." << endl;
+        cout << "Точка НЕ належить жовтій області." << endl;
     }
 }
